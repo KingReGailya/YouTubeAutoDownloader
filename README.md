@@ -1,7 +1,7 @@
 I made this just to practice dockerfile 
 that and to move away from youtube music
-i dont really plan to support this out side 
-of my own use becuse of how it was built
+i dont really have a support plan so it would be 
+best to build so a nightly build yourself but whatever
 
 how it works?
 
@@ -18,4 +18,4 @@ docker build -t dlp .
 
 followed by 
 
-docker run --name youtube-dlp -v download:/YT-downloader git-dlp
+docker run --name youtube-dlp -v download:/YT-downloads youtube-dlp
