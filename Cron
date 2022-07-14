@@ -1,0 +1,1 @@
+0 22 * * * ./playlist.sh >> /var/log/cron.log 2>&1
