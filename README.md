@@ -14,8 +14,8 @@ How to use it?
 
 run the command 
 
-docker build -t dlp .
+docker build -t yt-dlp .
 
-followed by 
+Followed by 
 
-docker run --name youtube-dlp -v download:/YT-downloads youtube-dlp
+docker run --name youtube-dlp -v download:/YT-downloader yt-dlp
