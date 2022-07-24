@@ -1,0 +1,32 @@
+version: "3"
+
+services:
+  downloader:
+    container_name: ytm-dlp
+    image: kingregailya/ytm-dlp:latest
+    restart: unless-stopped
+  volumes:
+    - /ytm-dlp/YT-downloader:/YT-downloader
+  restart: unless-stopped
+
+  syncthing:
+    image: lscr.io/linuxserver/syncthing:latest
+    container_name: syncthing
+    hostname: syncthing 
+    environment:
+      - PUID=1000
+      - PGID=1000
+      - TZ=Europe/London
+    volumes:
+      - /ytm-dlp/sync-config:/config    
+      - /ytm-dlp/YT-downloader:/YT-downloader
+    ports:
+      - 8384:8384
+      - 22000:22000/tcp
+      - 22000:22000/udp
+      - 21027:21027/udp
+    restart: unless-stopped
+  
+watchtower:
+  image: containrrr/watchtower
+  container_name: watchtower
