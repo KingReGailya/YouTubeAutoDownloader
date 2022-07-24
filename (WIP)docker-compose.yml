@@ -1,8 +1,7 @@
 version: "3"
-
 services:
   downloader:
-    container_name: ytm-dlp
+    container_name: yt-dlp
     image: kingregailya/ytm-dlp:latest
     restart: unless-stopped
   volumes:
