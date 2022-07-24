@@ -1,1 +1,1 @@
-0 22 * * * ./YT-downloader/playlist.sh >> /var/log/cron.log 2>&1
+0 22 * * * ./YT-downloader/Playlist.sh >> /var/log/cron.log 2>&1
