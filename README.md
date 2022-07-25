@@ -1,21 +1,30 @@
-I made this just to practice dockerfile 
+I made this just to practice dockerfile while
 that and to move away from youtube music
-i dont really have a support plan so it would be 
+I dont really have a LTS plan so it would be 
 best to build so a nightly build yourself but whatever
 
 how it works?
 
 it uses Y-DLP to download playlists from youtube 
-and put them your spefficed file within /YT-downloads
-Playlist.sh is what you edit inorder to tell it to download stuff
+and put them your spefficed file within 
+/YT-downloader
+Playlist.sh is what you edit in order to tell it to download stuff
 the docution on how to use is commented in there
 
 How to use it?
 
-run the command 
+Your Build:
 
-docker build -t yt-dlp .
+    Run
 
-Followed by 
+    docker build -t yt-dlp .
 
-docker run --name youtube-dlp -v download:/YT-downloader yt-dlp
+    Followed by
+     
+    docker run --name miku-dlp -v download:/YT-downloader yt-dlp
+
+Docker-hub Build:
+
+    Run
+
+    Docker run --name miku-dlp -v download:/YT-downloader  kingregailya/ytm-dlp
