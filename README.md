@@ -1,3 +1,8 @@
+DEPRECATED
+This repo will no longer be supported 
+please go to https://github.com/KingReGailya/mikua instead
+
+
 I made this just to practice dockerfile while
 that and to move away from youtube music
 I dont really have a LTS plan so it would be 
